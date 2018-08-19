@@ -1,0 +1,22 @@
+spring: 
+  datasource:
+    password: 123
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/vss?useUnicode=true&characterEncoding=utf8&characterSetResults=utf8
+    username: root
+  session:
+    store-type: none
+  jpa:
+    database: mysql
+    show-sql: true
+  redis:
+    password: 
+    database: 0  
+    port: 6379  
+    pool:
+      max-idle: 8  
+      min-idle: 0  
+      max-active: 8  
+      max-wait: -1  
+    host: 127.0.0.1
+    timeout: 0  
